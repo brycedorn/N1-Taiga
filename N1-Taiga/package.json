@@ -1,8 +1,8 @@
 {
-  "name": "N1-Taiga",
-  "theme": "Taiga",
-  "version": "0.2.4",
-  "description": "A clean, Mailbox-inspired theme for Nylas N1",
+  "name": "N1-Toogabooga",
+  "theme": "Toogabooga",
+  "version": "0.0.1",
+  "description": "An extension of the Taiga theme for Nylas N1",
   "license": "GPL-3.0",
   "engines": {
     "nylas": "*"

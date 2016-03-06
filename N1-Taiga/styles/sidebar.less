@@ -1,7 +1,7 @@
 @import "variables";
 
 #account-switcher .primary-item .name {
-  color: @taiga-dark;
+  color: @toogabooga-dark;
 }
 
 .account-sidebar-sections {
@@ -17,19 +17,28 @@
 
       .item {
         padding: 0 10px !important;
-        color: @taiga-light !important;
+        color: @toogabooga-light !important;
+        font-weight: medium;
         cursor: pointer !important;
 
         .item-count-box {
           background: transparent !important;
-          color: @taiga-light !important;
-          box-shadow: 0 0.5px 0 @taiga-light, 0 -0.5px 0 @taiga-light, 0.5px 0 0 @taiga-light, -0.5px 0 0 @taiga-light !important;
+          color: @toogabooga-light !important;
+          box-shadow: 0 0.5px 0 @toogabooga-light, 0 -0.5px 0 @toogabooga-light, 0.5px 0 0 @toogabooga-light, -0.5px 0 0 @toogabooga-light !important;
         }
 
         &.selected {
-          background: @taiga-accent !important;
+          background: @toogabooga-accent !important;
           border-radius: @base-border-radius;
           color: @white !important;
+
+          &#N1-Snoozed {
+            background: @lavender !important;
+          }
+
+          &.archive {
+            background: @nylas-green !important;
+          }
 
           .item-count-box {
             background: transparent !important;

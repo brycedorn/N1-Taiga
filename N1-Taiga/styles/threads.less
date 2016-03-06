@@ -1,40 +1,85 @@
 @import "variables";
 
+.message-item-wrap .message-item-white-wrap.composer-outer-wrap {
+  background: @toogabooga-lightest !important;
+
+  .composer-action-bar-wrap {
+    background: @toogabooga-lightest !important;    
+  }
+
+  .composer-inner-wrap .composer-action-bar-wrap {
+    box-shadow: none !important;
+  }
+
+  .btn {
+    line-height: 1em;
+  }
+
+  .btn.btn-toolbar.btn-trash {
+    padding-right: 9px;
+  }
+}
 .thread-list {
+  .thread-icon {
+    position: relative;
+    top: 10px;
+
+    &.thread-icon-unread {
+      background-image: none;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px; 
+      background-color: @toogabooga-accent;
+      top: 12px;
+      margin: 0 8px;
+    }
+  }
+  .participants {
+    padding: 0;
+  }
+  .subject {
+    padding: 0;
+  }
+  .snippet {
+    opacity: 0.3;
+  }
   .list-container {
     .list-item {
+      &.focused {
+        border: @toogabooga-light solid 1px;
+      }
       &.focused:hover .list-column-HoverActions .inner {
-        color: @taiga-dark !important;
-        background-image: linear-gradient(90deg, fadeout(@taiga-lighter, 100%) 0%, darken(@taiga-lighter, 10%) 100%);
+        color: @toogabooga-dark;
+        background-image: linear-gradient(90deg, fadeout(@toogabooga-lighter, 100%) 0%, darken(@toogabooga-lighter, 10%) 100%);
 
         .action {
           -webkit-filter: none;
         }
       }
       .list-column {
-        border-bottom: 0 !important;
+        border-bottom: 0;
       }
     }
     .scroll-region-content {
       .scroll-region-content-inner {
         .list-rows {
           .list-item {
-            cursor: pointer !important;
+            cursor: pointer;
             box-sizing: border-box;
-            border: 0 !important;
-            background-color: @white !important;
-            color: @taiga-dark !important;
+            border: 0;
+            background-color: @white;
+            color: @toogabooga-dark;
             &.focused {
-              color: @taiga-dark !important;
-              background-color: darken(@taiga-lighter, 5%) !important;
+              color: @toogabooga-dark;
+              background-color: darken(@toogabooga-lightest, 5%);
             }
             &.selected {
-              color: @taiga-dark !important;
-              background-color: darken(@taiga-lighter, 5%) !important;
+              color: @toogabooga-dark;
+              background-color: darken(@toogabooga-lightest, 5%);
             }
             &.keyboard-cursor {
               .list-column-Item {
-                border-left: 4px solid darken(@taiga-lighter, 50%) !important;
+                border-left: 4px solid darken(@toogabooga-lighter, 50%);
               }
             }
           }

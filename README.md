@@ -2,6 +2,8 @@
 
 ToogaBooga is an extension of [Taiga](https://github.com/noahbuscher/N1-Taiga), a clean, simple, Mailbox-inspired theme for N1 that allows you to focus on what matters most: your emails.
 
+![Preview](./preview.jpg)
+
 ## Installing
 
 1. [Download](https://nylas.com/n1) Nylas N1 email client if you have not yet

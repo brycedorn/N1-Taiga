@@ -1,7 +1,8 @@
 {
-  "name": "N1-Toogabooga",
-  "theme": "Toogabooga",
-  "version": "0.0.1",
+  "name": "N1-ToogaBooga",
+  "displayName": "ToogaBooga",
+  "theme": "ToogaBooga",
+  "version": "0.0.2",
   "description": "An extension of the Taiga theme for Nylas N1",
   "license": "GPL-3.0",
   "engines": {

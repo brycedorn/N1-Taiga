@@ -4,26 +4,26 @@
  * Buttons
  */
 .btn-toolbar, .token, .actions>.btn, .new-package>.btn, .appearance-mode-switch>.btn {
-  box-shadow: none !important;
-  background: @white !important;
-  border: none;
+  cursor       : pointer !important;
+  background   : @white !important;
+  border       : none;
   border-radius: @base-border-radius !important;
-  cursor: pointer !important;
+  box-shadow   : none !important;
 }
 
 body.platform-win32 {
   .sheet-toolbar-container {
     .btn-toolbar {
       line-height: 1.3em;
-      border: 0 !important;
+      border     : 0 !important;
     }
   }
 }
 
 .btn.btn-emphasis {
   background-color: @toogabooga-accent !important;
-  border-color: @toogabooga-accent !important;
-  color: @white !important;
+  color           : @white !important;
+  border-color    : @toogabooga-accent !important;
 
   img.content-mask {
     background-color: @white !important;
@@ -32,29 +32,30 @@ body.platform-win32 {
 
 .button-dropdown.bordered {
   .primary-item {
-    cursor: pointer !important;
-    box-shadow: none !important;
-    background: @white !important;
-    border: 1px solid @toogabooga-lighter !important;
-    border-top-left-radius: @base-border-radius !important;
+    cursor                   : pointer !important;
+    background               : @white !important;
+    border                   : 1px solid @toogabooga-lighter !important;
+    border-top-left-radius   : @base-border-radius !important;
     border-bottom-left-radius: @base-border-radius !important;
+    box-shadow               : none !important;
   }
 
   .secondary-picker {
-    cursor: pointer !important;
-    box-shadow: none !important;
-    background: @white !important;
-    border: 1px solid @toogabooga-lighter !important;
-    border-top-right-radius: @base-border-radius !important;
+    margin-left               : -1px !important;
+
+    cursor                    : pointer !important;
+    background                : @white !important;
+    border                    : 1px solid @toogabooga-lighter !important;
+    border-top-right-radius   : @base-border-radius !important;
     border-bottom-right-radius: @base-border-radius !important;
-    margin-left: -1px !important;
+    box-shadow                : none !important;
   }
 
   .secondary-items {
     .item  {
-      cursor: pointer;
-      color: @toogabooga-light !important;
+      cursor    : pointer;
       background: @white !important;
+      color     : @toogabooga-light !important;
 
       .button-dropdown {
         img {
@@ -69,9 +70,9 @@ body.platform-win32 {
  * Labels
  */
 .mail-label {
-  color: @toogabooga-light !important;
   background-color: @toogabooga-lighter !important;
-  box-shadow: inset 0 0 1px @toogabooga-accent, inset 0 1px 1px rgba(255,255,255,0.5), 0 0.5px 0 rgba(255,255,255,0.5) !important;
+  color           : @toogabooga-light !important;
+  box-shadow      : inset 0 0 1px @toogabooga-accent, inset 0 1px 1px rgba(255,255,255,0.5), 0 0.5px 0 rgba(255,255,255,0.5) !important;
 }
 
 /**
@@ -79,7 +80,7 @@ body.platform-win32 {
  */
 .btn-feedback {
   background: @toogabooga-accent !important;
-  border: none !important;
+  border    : none !important;
 }
 
 /**
@@ -88,7 +89,7 @@ body.platform-win32 {
 .content-container {
   .item.selected {
     background: @toogabooga-light !important;
-    color: @white !important;
+    color     : @white !important;
   }
 }
 
@@ -98,6 +99,7 @@ body.platform-win32 {
 .menu {
   .item.selected {
     background: @toogabooga-light !important;
+
     .primary {
       color: @white !important;
     }
@@ -119,7 +121,6 @@ body.platform-win32 {
  */
 .appearance-mode {
   cursor: pointer;
-
   &.active {
     background-color: lighten(@toogabooga-light, 30%) !important;
   }

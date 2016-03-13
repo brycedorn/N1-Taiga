@@ -4,66 +4,59 @@
  * Buttons
  */
 .btn-toolbar, .token, .actions>.btn, .new-package>.btn, .appearance-mode-switch>.btn {
-  cursor       : pointer !important;
-  background   : @white !important;
-  border       : none;
+  cursor: pointer !important;
+  background: @white !important;
+  border: none;
   border-radius: @base-border-radius !important;
-  box-shadow   : none !important;
+  box-shadow: none !important;
 }
-
 .toolbar-window-controls {
-  opacity: 0.8;
+  opacity: 0.7;
 }
-
 body.platform-win32 {
   .sheet-toolbar-container {
     .btn-toolbar {
       line-height: 1.3em;
-      border     : 0 !important;
+      border: 0 !important;
     }
   }
 }
-
 .btn.btn-emphasis {
   background-color: @toogabooga-accent !important;
-  color           : @white !important;
-  border-color    : @toogabooga-accent !important;
+  color: @white !important;
+  border-color: @toogabooga-accent !important;
 
   img.content-mask {
     background-color: @white !important;
   }
 }
-
 .button-dropdown.bordered {
   .primary-item {
-    cursor                   : pointer !important;
-    background               : @white !important;
-    border                   : 1px solid @toogabooga-lighter !important;
-    border-top-left-radius   : @base-border-radius !important;
+    cursor: pointer !important;
+    background: @white !important;
+    border: 1px solid @toogabooga-lighter !important;
+    border-top-left-radius: @base-border-radius !important;
     border-bottom-left-radius: @base-border-radius !important;
-    box-shadow               : none !important;
+    box-shadow: none !important;
   }
-
   .secondary-picker {
-    margin-left               : -1px !important;
-
-    cursor                    : pointer !important;
-    background                : @white !important;
-    border                    : 1px solid @toogabooga-lighter !important;
-    border-top-right-radius   : @base-border-radius !important;
+    margin-left: -1px !important;
+    cursor: pointer !important;
+    background: @white !important;
+    border: 1px solid @toogabooga-lighter !important;
+    border-top-right-radius: @base-border-radius !important;
     border-bottom-right-radius: @base-border-radius !important;
-    box-shadow                : none !important;
+    box-shadow: none !important;
   }
-
   .secondary-items {
-    .item  {
-      cursor    : pointer;
+    .item {
+      cursor: pointer;
       background: @white !important;
-      color     : @toogabooga-dark !important;
+      color: @toogabooga-dark !important;
 
       .button-dropdown {
         img {
-          background: @toogabooga-dark  !important;
+          background: @toogabooga-dark !important;
         }
       }
     }
@@ -76,8 +69,8 @@ body.platform-win32 {
 .mail-label {
   background-color: @toogabooga-lightest !important;
   background-image: none !important;
-  color           : @toogabooga-dark !important;
-  box-shadow      : inset 0 0 1px @toogabooga-accent, inset 0 1px 1px rgba(255,255,255,0.5), 0 0.5px 0 rgba(255,255,255,0.5) !important;
+  color: @toogabooga-dark !important;
+  box-shadow: inset 0 0 1px @toogabooga-accent, inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 0.5px 0 rgba(255, 255, 255, 0.5) !important;
 }
 
 /**
@@ -85,7 +78,7 @@ body.platform-win32 {
  */
 .btn-feedback {
   background: @toogabooga-accent !important;
-  border    : none !important;
+  border: none !important;
 }
 
 /**
@@ -94,7 +87,7 @@ body.platform-win32 {
 .content-container {
   .item.selected {
     background: @toogabooga-dark !important;
-    color     : @white !important;
+    color: @white !important;
   }
 }
 
@@ -126,6 +119,7 @@ body.platform-win32 {
  */
 .appearance-mode {
   cursor: pointer;
+
   &.active {
     background-color: lighten(@toogabooga-light, 30%) !important;
   }

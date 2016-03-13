@@ -5,8 +5,13 @@
 }
 .account-sidebar-sections {
   background-color: @white !important;
+
   .heading {
     color: @toogabooga-ish !important;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0.2em 0;
+    letter-spacing: 0.1em;
   }
   section {
     .item-container {
@@ -16,40 +21,35 @@
         display: none;
       }
       .item {
-        padding    : 0 10px !important;
-
-        cursor     : pointer !important;
+        padding: 0 10px !important;
+        cursor: pointer !important;
         font-weight: medium;
-        color      : @toogabooga-dark !important;
+        color: @toogabooga-dark !important;
 
         .item-count-box {
           background: transparent !important;
-          color     : @toogabooga-dark !important;
+          color: @toogabooga-dark !important;
           box-shadow: 0 0.5px 0 @toogabooga-light, 0 -0.5px 0 @toogabooga-light, 0.5px 0 0 @toogabooga-light, -0.5px 0 0 @toogabooga-dark !important;
         }
         &.selected {
-          background   : @toogabooga-lighter !important;
-          color        : @white !important;
+          background: @toogabooga-lighter !important;
+          color: @white !important;
           border-radius: @base-border-radius;
 
           &#N1-Snoozed {
             background: @snooze-color !important;
           }
-
           &#Starred {
             background: @star-color !important;
           }
-
           &.archive {
             background: @nylas-green !important;
           }
-
           .item-count-box {
             background: transparent !important;
-            color     : @white !important;
+            color: @white !important;
             box-shadow: 0 0.5px 0 @white, 0 -0.5px 0 @white, 0.5px 0 0 @white, -0.5px 0 0 @white !important;
           }
-
           .icon {
             img {
               background: @white !important;

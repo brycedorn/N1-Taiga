@@ -6,113 +6,93 @@
   .composer-action-bar-wrap {
     background: @toogabooga-lightest !important;
   }
-
   .composer-inner-wrap .composer-action-bar-wrap {
     box-shadow: none !important;
   }
-
   .btn {
     line-height: 1em;
     background: @white;
   }
-
   .btn.btn-toolbar.btn-trash {
     padding-right: 9px;
   }
-
-  
 }
 .thread-list {
   .thread-icon {
-    position: relative;
-    top     : 10px;
-
     &.thread-icon-unread {
-      top             : 12px;
-
-      height          : 14px;
-      width           : 14px;
-      margin          : 0 8px;
-
+      top: 12px;
+      height: 12px;
+      width: 12px;
+      margin: 0 8px;
       background-color: @toogabooga-accent;
       background-image: none;
-      border-radius   : 50%;
+      border-radius: 50%;
     }
   }
-
   .swipe-backing {
     &.swipe-archive {
       background-color: mix(@nylas-green, @background-primary, 75%) !important;
+
       &.confirmed {
         background-color: @nylas-green !important;
       }
     }
     &.swipe-snooze {
       background-color: mix(@snooze-color, @background-primary, 75%) !important;
+
       &.confirmed {
         background-color: @snooze-color !important;
       }
     }
   }
-
   .participants {
     padding: 0;
   }
-
   .subject {
     padding: 0;
   }
-
   .snippet {
     opacity: 0.3;
   }
-
   .list-container {
     .list-item {
       &.focused {
         border: @toogabooga-dark solid 1px;
       }
-
       &.focused:hover .list-column-HoverActions .inner {
         background-image: linear-gradient(90deg, fadeout(@toogabooga-lighter, 100%) 0%, darken(@toogabooga-lighter, 10%) 100%);
-        color           : @toogabooga-dark;
+        color: @toogabooga-dark;
 
         .action {
           -webkit-filter: none;
         }
       }
-
       .list-column {
         border-bottom: 0;
       }
     }
-
     .empty-state .generic .message {
-      cursor : default;
+      cursor: default;
       opacity: 0.5;
     }
-
     .scroll-region-content {
       .scroll-region-content-inner {
         .list-rows {
           .list-item {
-            box-sizing      : border-box;
-
-            cursor          : pointer;
+            box-sizing: border-box;
+            cursor: pointer;
             background-color: @white;
-            color           : @toogabooga-dark;
-            border          : 0;
+            color: @toogabooga-dark;
+            border: 0;
 
             &.focused {
               background-color: darken(@toogabooga-lightest, 5%);
-              color           : @toogabooga-dark;
+              color: @toogabooga-dark;
             }
-
             &.selected {
               background-color: darken(@toogabooga-lightest, 5%);
-              color           : @toogabooga-dark;
+              color: @toogabooga-dark;
             }
-
             &.keyboard-cursor {
               .list-column-Item {
                 border-left: 4px solid darken(@toogabooga-lighter, 50%);

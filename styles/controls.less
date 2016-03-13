@@ -11,6 +11,10 @@
   box-shadow   : none !important;
 }
 
+.toolbar-window-controls {
+  opacity: 0.8;
+}
+
 body.platform-win32 {
   .sheet-toolbar-container {
     .btn-toolbar {
@@ -55,11 +59,11 @@ body.platform-win32 {
     .item  {
       cursor    : pointer;
       background: @white !important;
-      color     : @toogabooga-light !important;
+      color     : @toogabooga-dark !important;
 
       .button-dropdown {
         img {
-          background: @toogabooga-light  !important;
+          background: @toogabooga-dark  !important;
         }
       }
     }
@@ -70,8 +74,9 @@ body.platform-win32 {
  * Labels
  */
 .mail-label {
-  background-color: @toogabooga-lighter !important;
-  color           : @toogabooga-light !important;
+  background-color: @toogabooga-lightest !important;
+  background-image: none !important;
+  color           : @toogabooga-dark !important;
   box-shadow      : inset 0 0 1px @toogabooga-accent, inset 0 1px 1px rgba(255,255,255,0.5), 0 0.5px 0 rgba(255,255,255,0.5) !important;
 }
 
@@ -88,7 +93,7 @@ body.platform-win32 {
  */
 .content-container {
   .item.selected {
-    background: @toogabooga-light !important;
+    background: @toogabooga-dark !important;
     color     : @white !important;
   }
 }
@@ -98,7 +103,7 @@ body.platform-win32 {
  */
 .menu {
   .item.selected {
-    background: @toogabooga-light !important;
+    background: @toogabooga-dark !important;
 
     .primary {
       color: @white !important;

@@ -5,6 +5,9 @@
 }
 .account-sidebar-sections {
   background-color: @white !important;
+  .heading {
+    color: @toogabooga-ish !important;
+  }
   section {
     .item-container {
       margin: 0 10px !important;
@@ -17,20 +20,24 @@
 
         cursor     : pointer !important;
         font-weight: medium;
-        color      : @toogabooga-light !important;
+        color      : @toogabooga-dark !important;
 
         .item-count-box {
           background: transparent !important;
-          color     : @toogabooga-light !important;
-          box-shadow: 0 0.5px 0 @toogabooga-light, 0 -0.5px 0 @toogabooga-light, 0.5px 0 0 @toogabooga-light, -0.5px 0 0 @toogabooga-light !important;
+          color     : @toogabooga-dark !important;
+          box-shadow: 0 0.5px 0 @toogabooga-light, 0 -0.5px 0 @toogabooga-light, 0.5px 0 0 @toogabooga-light, -0.5px 0 0 @toogabooga-dark !important;
         }
         &.selected {
-          background   : @nylas-blue !important;
+          background   : @toogabooga-lighter !important;
           color        : @white !important;
           border-radius: @base-border-radius;
 
           &#N1-Snoozed {
             background: @snooze-color !important;
+          }
+
+          &#Starred {
+            background: @star-color !important;
           }
 
           &.archive {

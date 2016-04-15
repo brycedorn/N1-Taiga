@@ -6,6 +6,8 @@ ToogaBooga is an extension of [Taiga](https://github.com/noahbuscher/N1-Taiga), 
 
 ## Installing
 
-1. [Download](https://invite.nylas.com/download/) Nylas N1 email client if you have not yet
-2. [Grab](https://github.com/brycedorn/N1-ToogaBooga/releases) the latest release of ToogaBooga
-3. Open `N1>Preferences>General>Select theme` and select `Install new theme...` from the dropdown
+1. [Download](https://invite.nylas.com/download/) Nylas N1 email client if you haven't yet
+2. [Grab](https://github.com/brycedorn/N1-ToogaBooga/releases) the latest release of the theme
+3. Unzip ToogaBooga somewhere
+4. `Nylas N1 > Install theme...` and select this directory!
+5. :whale:
